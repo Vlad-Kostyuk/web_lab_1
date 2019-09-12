@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+ <html>
+ 
+  <head>
+  
+   <meta charset="utf-8">
+   <!--
+   <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+   -->
+       <link rel="stylesheet" href="style.css" type="text/css"/>
+   
+    <title>Detecting HTML5 Features - Dive Into HTML5</title>
+	
+  </head>
+  
+  
+  <body align="center" class="one">
+  
+  
+   <div>
+     <p align="left" class="one_heat">
+      You are here: <a href=" " class="text_style">Home</a> <a href=" " class="text_style">Dive Into HTML5 </a>
+     </p>
+   </div>
+
+
+
+   <div align="center"> 
+    <h1 class="one_heigth" >
+     <center>
+	  <big>
+        №2.
+	  </big>
+     </center>
+    </h1>
+   
+   
+   
+   <h2 class="two">
+    <center>
+	 <big>
+	  DETECTING HTML5 FEATURES
+	 </big>
+	</center>
+   </h2>
+  
+  
+  
+    <h3 class="show_table">
+     <center >
+       <a href=" " class="text_style">show table of contents</a>
+	 </center>
+    </h3>
+  </div>
+  
+  
+  
+  
+  <p>
+  <center>
+  <img src="image_love.png" alt="Письма мастера дзен">
+  </center>
+  </p>
+  
+  
+  
+   <h4 class="diving">
+    <center>
+	 <big>
+      DIVING IN
+     </big>
+	</center>
+   </h4>
+   
+   
+   
+   <div align="left">
+	<img src="Y.png" alt="Письма мастера дзен" class="image_one">
+         ou may well ask: “How can I start using HTML5 if older browsers don’t support it?” But the question itself is
+	  <br>misleading.HTML5 is not one big thing; it is a collection of individual features. So you can’t detect “HTML5
+	  <br>support,” because that doesn’t make any sense. But you can detect support for individual features, like canvas,
+	  <br>video, or geolocation.
+   </div>
+   
+
+
+    <h4 class="detection">
+     <center>
+	  <big>
+	   DETECTION TECHNIQUES
+	  </big>
+	 </center>
+	</h4>
+	
+	
+   
+	<center>
+	<div align="justify">
+	  <br>When your browser renders a web page, it constructs a Document Object Model (DOM), a collection of objects that represent
+	  <br>the HTML elements on the page. Every element — every &lt;p&gt;, every &lt;div&gt;, every &lt;span&gt; — is represented in the DOM by a
+	  <br>different object. (There are also global objects, like window and document, that aren’t tied to specific elements.)
+      <p></p>
+	  <img src="girl.png" alt="Письма мастера дзен" class="image_girl">
+	  <br>All DOM objects share a set of common properties, but some objects have more than
+	  <br>others. In browsers that support HTML5 features, certain objects will have unique 
+	  <br>properties. A quick peek at the DOM will tell you which features are supported. 
+	  <p></p>
+	  <br>There are four basic techniques for detecting whether a browser supports a particular feature. 
+	  <br>From simplest to most complex:
+	  
+	 <ol> 
+	  <br><li>Check if a certain property exists on a global object (such as window or</li> 
+	  navigator).
+	  <p></p>
+      <br>Example: <a href=" " class="text_style">testing for geolocation support</a>
+	  <p></p>
+	  
+      <br><li>Create an element, then check if a certain property exists on that element.</li>
+	  <p></p>
+	  <br>Example: <a href=" " class="text_style">testing for canvas support</a>
+	  <p></p>
+
+      <br><li>Create an element, check if a certain method exists on that element, then call the</li> 
+	  method and check the value it returns.
+	  <p></p>
+	  <br>Example: <a href=" " class="text_style">testing which video formats are supported</a>
+	  <p></p>
+
+      <br><li>Create an element, set a property to a certain value, then check if the property has retained its value.</li>
+	  <p></p>
+
+	  <br>Example: <a href=" " class="text_style">testing which &lt;input&gt; types are supported</a>
+	 </ol>
+     </div>
+	</center>
+   
+
+    <p>
+     <center>
+      <img src="image_love.png" alt="Письма мастера дзен" class="image_love">
+       </center>
+    </p>
+
+
+	 <h5 class="microdata">
+	  <center>
+	   <big>
+	    MICRODATA
+	   </big>
+	  </center>
+	 </h5>
+	
+	<div align="justify">
+	   <img src="shelf.png" alt="Письма мастера дзен" class="image_shelf">
+	   <p> <a href=" " class="text_style">Microdata</a> is a standardized way to provide additional semantics in your web</p>
+	   <p>pages. For example, you can use microdata to declare that a photograph is</p> 
+	   <p>available under a specific Creative Commons license. As you’ll see in <a href=" " class="text_style">the</a> </p> 
+	   <p> <a href=" " class="text_style">distributed extensibility chapter</a>, you can use microdata to mark up an “About</p>
+	   <p>Me” page. Browsers, browser extensions, and search engines can convert your</p>
+	   <p>HTML5 microdata markup into a <a href=" " class="text_style">vCard</a>, a standard format for sharing contact</p>
+	   <p>information. You can also define your own microdata vocabularies.</p>
+
+	   <br><p>The HTML5 microdata standard includes both HTML markup (primarily for</p> 
+	   <p>search engines) and a set of DOM functions (primarily for browsers). There’s no</p> 
+	   <p>harm in including microdata markup in your web pages. It’s nothing more than a few well-placed attributes, and search</p> 
+	   <p>engines that don’t understand the microdata attributes will just ignore them. But if you need to access or manipulate</p> 
+	   <p>microdata through the DOM, you’ll need to check whether the browser supports the microdata DOM API.</p>
+
+	   <br><p>Checking for HTML5 microdata API support uses <a href=" " class="text_style">detection technique #1</a>. If your browser supports the HTML5 microdata</p> 
+	   <p>API, there will be a getItems() function on the global document object. If your browser doesn’t support microdata, the</p> 
+
+	   <code>
+	   <br><p>getItems() function will be undefined.</p>
+	   <p></p>
+	   <p>function supports_microdata_api() {</p>
+	   <p>return !!document.getItems;</p>
+	   <p>}
+	   </code>
+       <p></p>
+	   <p>Modernizr does not yet support checking for the microdata API, so you’ll need to use the function like the one listed above.</p>
+	</div>
+	
+	<p>
+     <center>
+      <img src="image_love.png" alt="Письма мастера дзен" class="image_love">
+       </center>
+    </p>
+	
+	
+	<h2 class="microdata">
+	  <center>
+	   <big>
+	    HISTORY API
+	   </big>
+	  </center>
+	 </h2>
+	
+	<div  align="left">
+	 <img src="history_api.png" alt="Письма мастера дзен" class="history_api">
+	 <br> <a href=" " class="text_style">The HTML5 history API</a> is a standardized way to manipulate the browser history via script. 
+	 <br>Part of this API — navigating the history — has been available in previous versions of 
+	 <br>HTML. The new part in HTML5 is a way to add entries to the browser history, and respond 
+	 <br>when those entries are removed from the stack by the user pressing the browser’s back 
+	 <br>button. This means that the URL can continue to do its job as a unique identifier for the 
+	 <br>current resource, even in script-heavy applications that don’t ever perform a full page 
+	 <br>refresh.
+	 <p></p>
+	 <br>Checking for HTML5 history API support uses <a href=" " class="text_style">detection technique #1.</a> If your browser 
+	 <br>supports the HTML5 history API, there will be a pushState() function on the global 
+	 <br>history object. If your browser doesn’t support the history API, the pushState() function will be undefined.
+	
+	<p></p>
+	 <code>
+	 <br>function supports_history_api() {
+	  <br> return !!(window.history && history.pushState);
+	 <br>}
+	 </code>
+	 
+	 <p></p>
+	 <br>Instead of writing this function yourself, you can use <a href=" " class="text_style">Modernizr</a> (1.6 or later) to detect support for the HTML5 history API.
+	 <p></p>
+	 
+	
+	 
+	
+	  <img src="api.png" alt="Письма мастера дзен" class="">
+		 <code>
+		 
+		 <br>if (<mark> Modernizr.history </mark>) {
+		 // history management works!<br>
+		 } else {<br>
+		   // no history support :(<br>
+		   // fall back to a scripted solution like <a href=" " class="text_style">History.js</a><br>
+		 }
+		 </code>
+	 
+	 </div>
+	
+	
+	
+	<p>
+     <center>
+      <img src="image_love.png" alt="Письма мастера дзен" class="image_love">
+       </center>
+    </p>
+	
+	
+	<h2 class="microdata">
+	  <center>
+	   <big>
+	    FURTHER READING
+	   </big>
+	  </center>
+	</h2>
+	
+	
+	<div align="left">
+	 <p>Specifications and standards:</p>
+	 
+	  <ul>
+	   <li> <a href=" " class="text_style"> the &lt;canvas&gt; element </a> </li>
+	   <li> <a href=" " class="text_style"> the &lt;video&gt; element </a> </li>
+	   <li> <a href=" " class="text_style"> &lt;input&gt; types </a> </li>
+	   <li> <a href=" " class="text_style"> the &lt;input placeholder&gt; attribute </a> </li>
+	   <li> <a href=" " class="text_style"> the &lt;input autofocus&gt;  attribute </a> </li>
+	   <li> <a href=" " class="text_style"> HTML5 storage </a> </li>
+	   <li> <a href=" " class="text_style"> Web Workers </a> </li>
+	   <li> <a href=" " class="text_style"> Offline web applications </a> </li>
+	   <li> <a href=" " class="text_style"> Geolocation API </a> </li>
+	   <li> <a href=" " class="text_style"> Session history and navigation </a> </li>
+	  </ul>
+	 <p>JavaScript libraries:</p>
+	   
+	  <ul>
+	   <li> <a href=" " class="text_style"> Modernizr </a>, an HTML5 detection library</li>
+	   <li> <a href=" " class="text_style"> geo.js </a>, a geolocation API wrapper</li>
+	   <li> <a href=" " class="text_style"> HTML5 Cross-browser Polyfills </a> </li>
+	  </ul>
+	  
+	  <p>Other articles and tutorials:</p> 
+	  
+	   <ul>
+	    <li> <a href=" " class="text_style"> Video for Everybody! </a> </li>
+		<li> <a href=" " class="text_style"> A gentle introduction to video encoding </a> </li>
+		<li> <a href=" " class="text_style"> Video type parameters </a> </li>
+		<li> <a href=" " class="text_style"> The All-In-One Almost-Alphabetical Guide to Detecting Everything </a> </li>
+		<li> <a href=" " class="text_style"> Internet Explorer 9 Guide for Developers </a> </li>
+	   </ul>
+	   
+	</div>
+	
+	
+	  <p>
+       <center>
+        <img src="image_love.png" alt="Письма мастера дзен" class="image_love">
+       </center>
+      </p>
+	  
+	<div>
+	 <p align="left">This has been “Detecting HTML5 Features.” The full table of contents has more if you’d like to keep reading.</p>
+	 
+	 <br><table bordercolor="black";>
+      <tr align="left"><th>DID YOU KNOW?</th>
+      <tr  align="left"><td>In association with Google Press, O’Reilly is distributing this book in a variety of 
+	  	  <img src="dolar.png" alt="Письма мастера дзен" class="image_dolar">
+	  <br>formats, including paper, ePub, Mobi, and DRM-free PDF. The paid edition is called 
+	  <br>“HTML5: Up & Running,” and it is available now. This chapter is included in the paid 
+	  <br>edition.
+	  
+	  <p></p>
+	  <br>If you liked this chapter and want to show your appreciation, you can buy “HTML5: Up 
+	  <br>& Running” with this affiliate link or buy an electronic edition directly from O’Reilly. 
+	  <br>You’ll get a book, and I’ll get a buck. I do not currently accept direct donations.
+	  </td>
+     </table>
+	 
+	 <center>
+	 <p> Copyright MMIX–MMXI  <a href=" " class="text_down_style"> Mark Pilgrim </a> </p>
+	 </center>
+	 
+    </div>	
+	   
+  </body>
+  
+  
+ </html>

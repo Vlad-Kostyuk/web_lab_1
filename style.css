@@ -1,0 +1,133 @@
+
+    body {
+		max-width: 1000px;
+		margin-left: 13%;
+		margin-right: 13%;
+	}
+
+	 h1.one_heigth {
+	  margin-top: 6%;
+	  margin-bottom: 2.5%;
+	 }
+	
+	
+	 p.one_heat {
+	  margin-top: 3%;
+	 }
+	
+	
+	
+	h2.two {
+	 margin-top: -3%;
+	}
+	
+	
+	
+	 h3.show_table {
+	  margin-top: 6%;
+	  margin-bottom: 4%;
+	 }
+	
+	
+	
+	 h4.diving {
+	  margin-top: 4%;
+	 }
+	
+	
+	
+	 h4.detection { 
+	  margin-top: 9%;
+	 }
+	
+	
+	
+	 h5.microdata { 
+	  margin-top: 3%;
+	 }
+	
+	
+	
+	 img.image_one {
+	  float: left;
+
+	 }
+	 
+	 
+	 
+	 img.image_girl {
+      margin-right: 14%;
+	  float: right;
+	 }
+	 
+	 
+    
+     br.v1 {
+	  vertical-align: baseline;
+	 }
+    
+	
+	
+	 img.image_love {
+	  margin-top: 3%;
+	 }
+	
+	
+	 
+	 img.image_shelf {
+     margin: 5px;
+	 margin-right: 13%;
+	  float: right;
+	 }
+	 
+	 
+	 
+	 img.history_api {
+	  float: left;
+	 }
+	 
+	 
+	 
+       table {
+        width: 100%; 
+		border: 1px solid black; 
+        background: white; 
+        color: white; 
+        border-spacing: 2%; 
+       }
+       th {
+        background: black; 
+        padding: 5px; 
+       }
+	   td{
+	   color: black;
+	   }
+     
+	 
+	 
+	 img.image_dolar {
+	  float: right;
+	 }
+	 
+	 
+	  
+	   a.text_style {
+	     text-decoration: none; 
+         border-bottom: 1px dashed #8B1A1A; 
+		 color: FireBrick;
+	   }
+	   a.text_style: hover {
+	     color: RosyBrown;
+	   }
+	 
+	 
+	 
+	   a.text_down_style {
+	     text-decoration: none; 
+         border-bottom: 1px dashed black; 
+		 color: black;
+	   }
+	   
+	  mark {
+		 border: 1px dotted black; 
+	  }
